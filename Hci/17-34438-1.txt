@@ -1,0 +1,212 @@
+https://www.youtube.com/watch?v=thfJcejdvUo
+
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     abalone
+Instances:    4177
+Attributes:   10
+              Sex
+              Length
+              Diameter
+              Height
+              Whole_weight
+              Shucked_weight
+              Viscera_weight
+              Shell_weight
+              Rings
+              Age_Class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                   Class
+Attribute          Young   Adult
+                  (0.65)  (0.35)
+=================================
+Sex
+  M                 872.0   658.0
+  F                 673.0   636.0
+  I                1188.0   156.0
+  [total]          2733.0  1450.0
+
+Length
+  mean             0.4883   0.591
+  std. dev.        0.1215  0.0832
+  weight sum         2730    1447
+  precision        0.0056  0.0056
+
+Diameter
+  mean             0.3772  0.4657
+  std. dev.        0.0993  0.0684
+  weight sum         2730    1447
+  precision        0.0054  0.0054
+
+Height
+  mean             0.1274  0.1646
+  std. dev.        0.0427  0.0302
+  weight sum         2730    1447
+  precision        0.0226  0.0226
+
+Whole_weight
+  mean             0.6721  1.1242
+  std. dev.        0.4307  0.4588
+  weight sum         2730    1447
+  precision        0.0012  0.0012
+
+Shucked_weight
+  mean             0.3039   0.464
+  std. dev.        0.2034  0.2176
+  weight sum         2730    1447
+  precision         0.001   0.001
+
+Viscera_weight
+  mean             0.1473  0.2434
+  std. dev.        0.0975  0.1035
+  weight sum         2730    1447
+  precision        0.0009  0.0009
+
+Shell_weight
+  mean              0.188  0.3348
+  std. dev.        0.1145  0.1307
+  weight sum         2730    1447
+  precision        0.0011  0.0011
+
+Rings
+  mean             8.4433 13.5467
+  std. dev.        1.6611   2.508
+  weight sum         2730    1447
+  precision         1.037   1.037
+
+
+
+Time taken to build model: 0.19 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.26 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3232               77.3761 %
+Incorrectly Classified Instances       945               22.6239 %
+Kappa statistic                          0.5369
+Mean absolute error                      0.2281
+Root mean squared error                  0.4385
+Relative absolute error                 50.3704 %
+Root relative squared error             92.1544 %
+Total Number of Instances             4177     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.738    0.159    0.898      0.738    0.810      0.553    0.890     0.938     Young
+                 0.841    0.262    0.630      0.841    0.720      0.553    0.890     0.829     Adult
+Weighted Avg.    0.774    0.195    0.805      0.774    0.779      0.553    0.890     0.900     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2015  715 |    a = Young
+  230 1217 |    b = Adult
+
+//////////////////////////////////////////////////////////////
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.CfsSubsetEval -P 1 -E 1" -S "weka.attributeSelection.BestFirst -D 1 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     abalone
+Instances:    4177
+Attributes:   10
+              Sex
+              Length
+              Diameter
+              Height
+              Whole_weight
+              Shucked_weight
+              Viscera_weight
+              Shell_weight
+              Rings
+              Age_Class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 43
+	Merit of best subset found:    1    
+
+Attribute Subset Evaluator (supervised, Class (nominal): 10 Age_Class):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 8,9 : 2
+                     Shell_weight
+                     Rings
+
+
+Header of reduced data:
+@relation abalone-weka.filters.unsupervised.attribute.Remove-V-R8-10
+
+@attribute Shell_weight numeric
+@attribute Rings numeric
+@attribute Age_Class {Young,Adult}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+Rings <= 10: Young (2730.0)
+Rings > 10: Adult (1447.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.48 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.29 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        4177              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             4177     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Young
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Adult
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2730    0 |    a = Young
+    0 1447 |    b = Adult
+

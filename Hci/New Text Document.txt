@@ -1,0 +1,184 @@
+https://www.engpaper.com/augmented-reality-2018.htm
+///////////////////////
+https://www.youtube.com/playlist?list=PLS1QulWo1RIYt4e0WnBp-ZjCNq8X0FX0J
+//////////////////////////////////////////////////////////////////////////////
+  public IEnumerable<TEntity> GetAll()
+        {
+            return jeEntities.Set<TEntity>().ToList();
+        }
+////////////////////////////////////////////
+ public IEnumerable<TEntity> GetAll()
+        {
+            return jeEntities.Set<TEntity>().ToList();
+        }
+
+
+https://www.youtube.com/watch?v=76QOT-1ryKI
+//////////////////
+https://www.youtube.com/watch?v=yasfZuou3zI&t=39s
+//////////////////////
+https://www.youtube.com/watch?v=O_xFSe4fZuA
+/////////////////////////
+https://www.youtube.com/watch?v=xZ9tQ8W2MgE
+///////////////////////////////
+ROC curves are frequently used to show the connection between clinical sensitivity and specificity for every possible cut-off for a test or a combination of tests.
+/////////////////////////////////////
+https://www.tutorialspoint.com/software_quality_management/software_quality_management_albrechts_function_point_method.htm
+///////////////////////////////////////////////////////////////////
+Distribution: Abalone is found along the rocky shores from mid New South Wales down and around to Western Australia.
+
+Description: Abalone is an edible mollusc ,endemic to Australia. It is considered a delicacy. It has a single, ear-shaped shell lined with mother of pearl. The foot of the abalone has a distinct black lip that gives this species its name. The body whorl has a series of holes—four to ten depending on the species—near the anterior margin, for the escape of water from the gills. There is no operculum. The iridescent nacre that lines the inside of the shell varies in color from silvery white, to pink, red and green-red, through deep blues, greens and purples.
+
+
+///////////////////////////////////////////
+
+
+
+=== Run information ===
+
+Scheme:       weka.clusterers.HierarchicalClusterer -N 2 -L SINGLE -P -A "weka.core.EuclideanDistance -R first-last"
+Relation:     WithVitamin
+Instances:    75
+Attributes:   12
+              Name
+              calories
+              protein
+              fat
+              sodium
+              fiber
+              carbo
+              sugers
+              potassium
+              vitamins
+              shelf
+              rating
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+Cluster 0
+(((((1:0.45956,3:0.45956):0.21047,4:0.67003):0.00706,(((2:0.63675,(((((((((5:0.34946,((8:0.24314,(46:0.21537,75:0.21537):0.02777):0.07118,(73:0.09803,74:0.09803):0.2163):0.03513):0.01125,35:0.36071):0.0113,(24:0.10622,36:0.10622):0.26578):0.11218,(((15:0.04606,61:0.04606):0.10861,16:0.15467):0.09347,60:0.24814):0.23605):0.04578,((((((((6:0.20993,23:0.20993):0.01771,(((14:0.03206,18:0.03206):0.15431,(28:0.01603,72:0.01603):0.17034):0.02973,41:0.2161):0.01153):0.0032,65:0.23084):0.02228,47:0.25311):0.02191,17:0.27503):0.00006,((10:0.11214,34:0.11214):0.14118,12:0.25332):0.02177):0.07193,30:0.34702):0.17681,((((((((((((7:0.21278,48:0.21278):0.06881,50:0.28159):0.03189,((13:0.19164,58:0.19164):0.06953,19:0.26118):0.05231):0.00829,21:0.32177):0.00038,((31:0.24174,55:0.24174):0.0414,(32:0.21347,49:0.21347):0.06966):0.03902):0.00223,((20:0.27122,71:0.27122):0.002,22:0.27322):0.05116):0.01553,26:0.33991):0.02772,33:0.36763):0.03526,((43:0.17638,44:0.17638):0.15406,45:0.33044):0.07245):0.00072,(27:0.37831,51:0.37831):0.02529):0.05821,9:0.46182):0.04317,39:0.50499):0.01885):0.00614):0.01013,57:0.5401):0.00472,(((25:0.2627,67:0.2627):0.18199,42:0.44469):0.07307,59:0.51776):0.02706):0.00696,40:0.55179):0.0068,29:0.55859):0.07816):0.01932,(53:0.27195,54:0.27195):0.38412):0.0045,(62:0.29323,(63:0.10657,64:0.10657):0.18666):0.36734):0.01652):0.00506,(11:0.49375,66:0.49375):0.18839):0.08807,(((((37:0.28993,68:0.28993):0.10692,70:0.39685):0.03047,38:0.42733):0.0605,52:0.48783):0.11208,69:0.59991):0.1703)
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      74 ( 99%)
+1       1 (  1%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+function dn= asc2bn(text)
+dec=double(text)
+p=2.^(0:-1:-7)
+b=floor(p'*dec)
+B=mod(b,2)
+dn=reshape(B,1,numel(B)) 
+
+end
+/////////////////////////////////////////
+
+Imran Ahmed Imran
+
+
+
+ categorical corresponding to nominal, binary and ordinal variables
+– continuous corresponding to integer, interval-scaled and ratio-scaled variables
+
+////////////////////
+In synchronous TDM, the address of the destination is required.
+(1 Point)
+False
+True
+
+
+
+Carrier frequency of different channels should be same.
+(1 Point)
+True
+False
+
+ANS:fALSE
+
+
+If the bit duration before multiplexing is 1 bps and there are 5 channels. What should be the output bit duration?
+(1 Point)
+1/4 s
+5 s
+0.05 s
+1/5 s
+
+
+
+
+The sharing of a medium and its link by two or more devices is called - (1 Point) 
+Multiplexing
+ Duplexing 
+Fully duplexing
+ Micropleixng
+Ans:Multiplexing
+
+
+
+20.The synchronous Time-Division Multiplexing (TDM) is not efficient because of -
+(1 Point)
+Both higher data rate & empty slots
+infinite frames
+empty slots
+higher data rate
+
+
+
+If the input data rate of a channel is 2kbps, what should be the duration of 1 bit before multiplexing
+(1 Point)
+0.005 s
+0.0005 s
+2 s
+1 s
+
+ans:0.0005 s
+
+
+If the output bit rate of a link is 4 mbps and there are four input channels are there, what should be input data rate of each channel?
+(1 Point)
+1 kbps
+1 mbps
+2 mbps
+4 mbps
+
+
+Which type of filters are used in de-multiplexing circuits?
+(1 Point)
+lowpass
+bandpass
+halfpass
+zeropass
+
+
+Guard band used for?
+Avoid interence
